@@ -1,0 +1,52 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Claude Code (local-only settings, NOT the committed settings.json)
+.claude/settings.local.json
+.claude/.credentials/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python (bridge/, vision/)
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+dist/
+build/
+
+# Java / Gradle (mod/)
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+.gradle/
+build/
+out/
+bin/
+run/
+.fabric/
+
+# CAD / 3D (cad/)
+*.gcode
+*.3mf
+slicer-output/
+# Keep .scad source and .stl checked in (these are the deliverables).
+
+# Camera calibration data (vision/)
+calibration/*.npz
+captures/
